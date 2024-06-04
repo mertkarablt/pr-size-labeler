@@ -72,7 +72,7 @@ runs:
   steps:
   - name: Size Label
     run: |
-      ./entrypoint.sh \
+      entrypoint.sh \
         --github_token=${{ github.token }} \
         --github_api_url=${{ github.api_url }} \
         --xs_label=${{ inputs.xs_label }} \
