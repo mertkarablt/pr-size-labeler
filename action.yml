@@ -72,8 +72,8 @@ runs:
   steps:
   - name: Size Label
     run: |
-      chmod +x entrypoint.sh
-      entrypoint.sh \
+      chmod +x $GITHUB_ACTION_PATH/entrypoint.sh
+      $GITHUB_ACTION_PATH/entrypoint.sh \
         --github_token=${{ github.token }} \
         --github_api_url=${{ github.api_url }} \
         --xs_label=${{ inputs.xs_label }} \
