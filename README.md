@@ -22,6 +22,10 @@
     Visualize and optionally limit the size of your Pull Requests
 </p>
 
+This is a composite action. It supports Linux, Windows, and macOS.
+
+Forked from [CodelyTV/pr-size-labeler](https://github.com/CodelyTV/pr-size-labeler).
+
 ## 🚀 Usage
 
 Create a file named `labeler.yml` inside the `.github/workflows` directory and paste the following configuration.
@@ -39,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Label the PR size
     steps:
-      - uses: codelytv/pr-size-labeler@v1
+      - uses: mertkarablt/pr-size-labeler@v1.10.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           xs_label: 'size/xs'
