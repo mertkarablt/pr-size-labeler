@@ -15,6 +15,7 @@ source "$PR_SIZE_LABELER_HOME/src/main.sh"
 
 for a in "${@}"; do
   arg=$(echo "$a" | tr '\n' ' ' | xargs echo | sed "s/'//g"| sed "s/’//g")
+  echo $arg
   sanitizedArgs+=("$arg")
 done
 

@@ -74,8 +74,8 @@ runs:
     run: |
       chmod +x $GITHUB_ACTION_PATH/entrypoint.sh
       $GITHUB_ACTION_PATH/entrypoint.sh \
-        --github_token=${{ github.token }} \
-        --github_api_url=${{ github.api_url }} \
+        --github_token=${{ inputs.GITHUB_TOKEN }} \
+        --github_api_url=${{ inputs.github_api_url }} \
         --xs_label=${{ inputs.xs_label }} \
         --xs_max_size=${{ inputs.xs_max_size }} \
         --s_label=${{ inputs.s_label }} \
