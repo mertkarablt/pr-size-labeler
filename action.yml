@@ -86,7 +86,7 @@ runs:
         --l_max_size='${{ inputs.l_max_size }}' \
         --xl_label='${{ inputs.xl_label }}' \
         --fail_if_xl='${{ inputs.fail_if_xl }}' \
-        --message_if_xl="${{ inputs.message_if_xl }}" \
+        --message_if_xl='${{ inputs.message_if_xl }}' \
         --files_to_ignore='${{ inputs.files_to_ignore }}' \
         --ignore_line_deletions='${{ inputs.ignore_line_deletions }}' \
         --ignore_file_deletions='${{ inputs.ignore_file_deletions }}'
